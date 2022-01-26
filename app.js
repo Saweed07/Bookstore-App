@@ -6,7 +6,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-var mongoDB = 'add your address';
+var mongoDB = 'mongodb://192.168.254.104/db';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true,  useUnifiedTopology: true, useFindAndModify: false });
 var db = mongoose.connection;
