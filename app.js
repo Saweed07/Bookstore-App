@@ -6,7 +6,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-var mongoDB = 'mongodb://192.168.254.104/db';
+var mongoDB = 'mongodb+srv://saweed:saweed07@cluster0.xtnce.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true,  useUnifiedTopology: true, useFindAndModify: false });
 var db = mongoose.connection;
